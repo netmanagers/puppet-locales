@@ -18,4 +18,4 @@ matrix:
 gemfile: .gemfile
 notifications:
   email:
-    - al@lab42.it
+    - javier@netmanagers.com.ar
