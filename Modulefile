@@ -1,5 +1,5 @@
 name    'nm-locales'
-version '1.0.0'
+version '0.0.2'
 author  'Javier Bertoli'
 license 'Apache2'
 project_page 'http://www.netmanagers.com'

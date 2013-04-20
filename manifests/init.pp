@@ -16,6 +16,9 @@
 #   Due to this, if you want all your systems configured with the same locale, the first
 #   value is the one that will propagate to all the distros.
 #
+# [*generate_command*]
+#   Command to generate locale files.
+#
 # Standard class parameters
 # Define the general class behaviour and customizations
 #
@@ -164,12 +167,21 @@ class locales (
     mode    => $locales::config_file_mode,
     owner   => $locales::config_file_owner,
     group   => $locales::config_file_group,
-    require => $package_require,
+    require => $locales::package_require,
     source  => $locales::manage_file_source,
     content => $locales::manage_file_content,
     replace => $locales::manage_file_replace,
     audit   => $locales::manage_audit,
     noop    => $locales::bool_noops,
+  }
+
+  if $locales::generate_command != '' {
+    exec { 'generate_locales':
+      command     => $locales::generate_command,
+      refreshonly => true,
+      require     => $locales::package_require,
+      subscribe   => File['locales.conf'],
+    }
   }
 
   ### Include custom class if $my_class is set

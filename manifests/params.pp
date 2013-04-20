@@ -27,7 +27,7 @@ class locales::params {
   }
 
   $config_file = $::operatingsystem ? {
-    /(?i:Debian|Ubuntu|Mint)/ => '/etc/locales.gen',
+    /(?i:Debian|Ubuntu|Mint)/ => '/etc/locale.gen',
     default                   => '/etc/sysconfig/i18n',
   }
 
@@ -49,6 +49,11 @@ class locales::params {
   }
 
   $locales= ''
+
+  $generate_command = $::operatingsystem ? {
+    /(?i:Debian|Ubuntu|Mint)/ => '/usr/sbin/locale-gen',
+    default                   => '',
+  }
 
   # General Settings
   $my_class = ''
