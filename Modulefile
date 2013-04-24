@@ -1,4 +1,4 @@
-name    'nm-locales'
+name    'netmanagers-locales'
 version '0.0.2'
 author  'Javier Bertoli'
 license 'Apache2'
