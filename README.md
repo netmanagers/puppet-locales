@@ -83,4 +83,4 @@ This module requires the presence of Example42 Puppi module in your modulepath.
 
 
 ## TESTING
-[![Build Status](https://travis-ci.org/example42/puppet-locales.png?branch=master)](https://travis-ci.org/example42/puppet-locales)
+[![Build Status](https://travis-ci.org/netmanagers/puppet-locales.png?branch=master)](https://travis-ci.org/netmanagers/puppet-locales)
