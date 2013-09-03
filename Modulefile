@@ -1,5 +1,5 @@
 name    'netmanagers-locales'
-version '0.0.2'
+version '0.0.3'
 author  'Javier Bertoli'
 license 'Apache2'
 project_page 'http://www.netmanagers.com'
