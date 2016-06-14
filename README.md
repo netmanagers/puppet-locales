@@ -1,5 +1,22 @@
 # Puppet module: locales
 
+## [Maintainer wanted](https://github.com/netmanagers/puppet-locales/issues/new)
+
+**WARNING WARNING WARNING**
+
+[puppet-locales](https://github.com/netmanagers/puppet-locales) is not currently being maintained, 
+and may have unresolved issues or not be up-to-date. 
+
+I'm still using it on a daily basis (with Puppet 3.8.5) and fixing issues I find
+while using it. But sadly, I don't have the time required to actively add new features,
+fix issues other people report or port it to Puppet 4.x.
+
+If you would like to maintain this module,
+please create an issue at: https://github.com/netmanagers/puppet-locales/issues
+offering yourself.
+
+## Getting started
+
 This is a Puppet module for locales
 It provides only package installation and file configuration.
 
